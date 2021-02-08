@@ -19,6 +19,10 @@ from .models import Customer, Employee, Food, Category, Coupon, CheckOut
 
 
 class UserList(GenericAPIView):
+    '''
+        Retrieves specific user
+    '''
+
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
@@ -36,6 +40,10 @@ class UserList(GenericAPIView):
 
 
 class CustomerUserCreate(GenericAPIView):
+    '''
+        Registers new user
+    '''
+
     serializer_class = CustomerRegistrationSerializer
 
     def post(self, request, *args, **kwargs):
@@ -49,6 +57,10 @@ class CustomerUserCreate(GenericAPIView):
 
 
 class UserLogin(GenericAPIView):
+    '''
+        Login registered user
+    '''
+
     serializer_class = LoginSerializer
 
     def post(self, request, *args, **kwargs):
@@ -65,6 +77,10 @@ class UserLogin(GenericAPIView):
 
 
 class CustomerUser(GenericAPIView):
+    '''
+        Verifies if the user is customer
+    '''
+
     serializer_class = CustomerSerializer
     permission_classes = [IsAuthenticated]
 
@@ -83,6 +99,10 @@ class CustomerUser(GenericAPIView):
 
 
 class FoodList(GenericAPIView):
+    '''
+        Retrieves food menu
+    '''
+
     serializer_class = FoodSerializer
 
     def get(self, request, *args, **kwargs):
@@ -115,6 +135,10 @@ class FoodList(GenericAPIView):
 
 
 class CouponList(GenericAPIView):
+    '''
+        Validates discount coupon
+    '''
+
     serializer_class = CouponSerializer
     permission_classes = [IsAuthenticated]
 
@@ -144,6 +168,10 @@ class CouponList(GenericAPIView):
 
 
 class CheckoutList(GenericAPIView):
+    '''
+        Checkout the card of user
+    '''
+
     serializer_class = CheckoutSerializer
     permission_classes = [IsAuthenticated]
 
@@ -176,6 +204,10 @@ class CheckoutList(GenericAPIView):
 
 
 class CheckoutUser(GenericAPIView):
+    '''
+        Retrieves all the checkouts of user
+    '''
+
     serializer_class = CheckoutSerializer
     permission_classes = [IsAuthenticated]
 
@@ -212,6 +244,10 @@ class CheckoutUser(GenericAPIView):
 
 
 class CategoryList(GenericAPIView):
+    '''
+        Retrieves categories
+    '''
+
     serializer_class = CategorySerializer
 
     def get(self, request, *args, **kwargs):
