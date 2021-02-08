@@ -4,27 +4,27 @@
 
 ### Endpoints
 
-> POST - http://127.0.0.1:8000/api/v1/register
+> POST - http://127.0.0.1:8000/api/v1/accounts/register
 
-> POST - http://127.0.0.1:8000/api/v1/login
+> POST - http://127.0.0.1:8000/api/v1/accounts/login
 
-> POST - http://127.0.0.1:8000/api/v1/checkout
+> POST - http://127.0.0.1:8000/api/v1/accounts/checkout
 
-> POST - http://127.0.0.1:8000/api/v1/token
+> POST - http://127.0.0.1:8000/api/v1/accounts/token
 
-> POST - http://127.0.0.1:8000/api/v1/token/refresh
+> POST - http://127.0.0.1:8000/api/v1/accounts/token/refresh
 
-> POST - http://127.0.0.1:8000/api/v1/token/verify
+> POST - http://127.0.0.1:8000/api/v1/accounts/token/verify
 
-> GET - http://127.0.0.1:8000/api/v1/food
+> GET - http://127.0.0.1:8000/api/v1/accounts/food
 
-> GET - http://127.0.0.1:8000/api/v1/coupon
+> GET - http://127.0.0.1:8000/api/v1/accounts/coupon
 
-> GET - http://127.0.0.1:8000/api/v1/checkout/user
+> GET - http://127.0.0.1:8000/api/v1/accounts/checkout/user
 
-> GET - http://127.0.0.1:8000/api/v1/customer
+> GET - http://127.0.0.1:8000/api/v1/accounts/customer
 
-> GET - http://127.0.0.1:8000/api/v1/category
+> GET - http://127.0.0.1:8000/api/v1/accounts/category
 
 ### Requirements
 
