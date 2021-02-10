@@ -31,8 +31,8 @@
 1. Go to the root directory of the program with CMD/your preferred terminal.
 2. Create and activate a virtual environment.
 3. Run `pip install -r requirements.txt`.
-4. Run `python manage.py runserver makemigrations`.
-5. Run `python manage.py runserver migrate`.
+4. Run `python manage.py makemigrations`.
+5. Run `python manage.py migrate`.
 6. Run `python manage.py runserver`.
 7. For local network deployment `python manage.py runserver 0.0.0.0:{port_number}`. (Optional)
 
@@ -201,6 +201,8 @@
    "customer": boolean
    }
 4. Returns the information as JSON.
+
+##
 
 #### **Category list - GET**
 
